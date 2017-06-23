@@ -1,6 +1,7 @@
 # Files with Passwords #
-*appsettings.json
-*client-secret.json
+###################
+appsettings.json
+client-secret.json
 
 # Compiled source #
 ###################
