@@ -1,0 +1,21 @@
+engines:
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - javascript
+  eslint:
+    enabled: false
+    channel: eslint-3
+  fixme:
+    enabled: true
+ratings:
+  paths:
+  - "**.js"
+exclude_paths:
+- packages/test-utils/
+- packages/scripts/
+- package/eslint-config-popper/
+- packages/popper/tests
+- packages/tooltip/tests
+- docs/

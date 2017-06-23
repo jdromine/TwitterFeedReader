@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" type="image/ico" href="~/images/salesforce1600.png" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/app/site.js"></script>
+    <nav class="navbar navbar-light bg-faded">
+        <img src="~/images/salesforce1600.png" width="30" height="30" alt="Salesforce Logo">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" id="search" onkeyup="filter(this)">
+        </form>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+</body>
+</html>

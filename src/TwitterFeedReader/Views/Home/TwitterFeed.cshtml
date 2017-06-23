@@ -1,0 +1,14 @@
+﻿@model IEnumerable<TwitterFeedReader.Models.Tweet>
+   
+
+<script src="~/app/twitterFeed.js"></script>
+
+<ul id="tweetList" class="row">
+    @foreach (var tweet in Model)
+    {   
+        <li class="row">
+            <div class="col-4">@Html.Raw(@tweet.HTMLForOEmbed)</div> 
+            <div class="col-8">@tweet.Text</div>        
+        </li>
+    }
+</ul>
